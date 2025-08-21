@@ -1,0 +1,176 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Style général du menu */
+nav {
+  background-color: #12ff75;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+
+    box-shadow: 0 4px 8px rgba(2, 95, 41, 0.5);
+  }
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Liste horizontale */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* espace entre les éléments */
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+/* Liens du menu */
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  font-size: 12px;
+  transition: color 0.3s ease;
+}
+
+/* Changement de couleur au survol */
+nav ul li a:hover {
+  color: #00aaff;
+}
+
+/* Optionnel : pour centrer verticalement le menu */
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.navbar{
+    display: flex;
+}
+
+
+/* ===== HEADER ===== */
+.banner {
+    background-color: rgb(2, 255, 116);
+    color: rgb(241, 237, 237);
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 25px;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+.banner-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ===== MAIN ===== */
+main {
+    padding: 40px 20px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 26px;
+}
+
+/* ===== PRODUCTS GRID ===== */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    position: relative;
+    text-align: center;
+    transition: transform 0.2s ease;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3 ease;
+}
+
+.product-card img:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.product-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.price {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 10px;
+}
+
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff00aa;
+    color: white;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.logo img{
+    width: 110px;
+    height: auto;
+}
+
+.phone {
+  font-size: 12px;         /* صغّر الحجم */
+  font-weight: 500;        /* خفيف */
+  color: #000000;          /* كحل - واضح */
+  font-family: Arial, sans-serif; /* خط واضح */
+}
+
